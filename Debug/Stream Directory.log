@@ -1,0 +1,11 @@
+﻿  Directory.cpp
+C:\Users\pavel\source\repos\Stream Directory\Stream Directory\Directory.h(62,1): error C2082: redefinition of formal parameter 'firm'
+C:\Users\pavel\source\repos\Stream Directory\Stream Directory\Directory.h(63,1): error C2082: redefinition of formal parameter 'next'
+C:\Users\pavel\source\repos\Stream Directory\Stream Directory\Directory.h(64,1): error C2082: redefinition of formal parameter 'prev'
+C:\Users\pavel\source\repos\Stream Directory\Stream Directory\Directory.h(65,1): error C2082: redefinition of formal parameter 'size'
+  Source.cpp
+C:\Users\pavel\source\repos\Stream Directory\Stream Directory\Directory.h(62,1): error C2082: redefinition of formal parameter 'firm'
+C:\Users\pavel\source\repos\Stream Directory\Stream Directory\Directory.h(63,1): error C2082: redefinition of formal parameter 'next'
+C:\Users\pavel\source\repos\Stream Directory\Stream Directory\Directory.h(64,1): error C2082: redefinition of formal parameter 'prev'
+C:\Users\pavel\source\repos\Stream Directory\Stream Directory\Directory.h(65,1): error C2082: redefinition of formal parameter 'size'
+  Generating Code...
