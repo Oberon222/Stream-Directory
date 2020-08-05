@@ -210,3 +210,20 @@ void Directory::Print(Firm fm) const
 	cout << "Company address: " << fm.address << endl;
 	cout << "The type of activity of the firm: " << fm.kindOfActivity << endl;
 }
+
+void Directory::Save(Directory& dir) const
+{
+	fstream fout("Directory.bin", ios_base::out | ios_base::binary);
+	bool isOpen = fout.is_open();
+	if (!isOpen)cout << "Error" << endl;
+
+	fout.write((char*)&dir, sizeof(dir));
+	fout.close();
+}
+
+void Directory::Load(Directory& dir)
+{
+	ifstream fin("Directory.bin", ios_base::in | ios_base::binary);
+	fin.read((char*)&dir, sizeof(dir));
+	fin.close();
+}

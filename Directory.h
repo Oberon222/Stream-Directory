@@ -2,6 +2,7 @@
 #include<iostream>
 #include<string>
 #include<fstream>
+#include<list>
 using namespace std;
 
 	struct Firm
@@ -14,11 +15,11 @@ using namespace std;
 
 		Firm()
 		{
-			string name = "no name";
-			string owner = "no owner";
-			string phonNumber = "no phon number";
-			string address = "no address";
-			string kindOfActivity = "no kind of activity";
+			string name = " ";
+			string owner = " ";
+			string phonNumber = " ";
+			string address = " ";
+			string kindOfActivity = " ";
 		}
 
 		Firm(string name, string owner, string phonNumber,string address, string kendOfActivity)
@@ -49,21 +50,7 @@ class Directory
 
 public:
 
-	Directory()
-	{
-		Firm firm = Firm();
-		Node* next = nullptr;
-		Node* prev = nullptr;
-		int size = 0;
-	}
-
-	Directory(Firm firm, Node* next, Node* prev, int size,string name, string owner, string phonNumber, string address, string kindOfActivity)
-	{
-		Firm firm = Firm(name, owner, phonNumber, address, kindOfActivity);
-		Node* next = nullptr;
-		Node* prev = nullptr;
-		int size = 0;
-	}
+	Directory() : head(nullptr), tail(nullptr), size(0) {}
 
 	~Directory()
 	{
@@ -107,6 +94,12 @@ public:
 	void ShowDirectory()const;
 
 	void Print(Firm fm)const;
+
+	void Save(Directory& dir)const;
+
+	void Load(Directory& dir);
+
+
 
 
 };
